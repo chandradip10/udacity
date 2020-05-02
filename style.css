@@ -1,0 +1,333 @@
+  *{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color:white;
+}
+
+header{
+    display: flex;
+    width: 100%;
+    height: 10vh;
+    align-items: center;
+    background-color: #000000dc;
+    margin: auto;
+}
+
+.logo-container,
+.search-box,
+.search-box-1,
+.nav-links,
+.login-btn{
+    display: flex;
+}
+
+.logo-container{
+    flex: 0.8;
+}
+
+.logo-image{
+    height: 18px;
+    width: 9%;
+    margin-left: 10px;
+    color: white;
+}
+
+.logo{
+    font-weight: 500;
+    margin-left: 5px;
+    color: white;
+}
+
+.search-box{
+    flex: 1.5;
+}
+
+.search-box-1{
+    position: absolute;
+    margin-left: 10%;
+    transform: translate(-50%,-50%);
+    background: #706f6fcb;
+    height: 35px;
+    width: 15%;
+    border-radius: 40px;
+    padding: 10px;
+}
+
+.search-text{
+    border: none;
+    background: none;
+    outline: none;
+    float: left;
+    padding: 0;
+    color: white;
+    font-size: 16px;
+    transition: 0.4s;
+    line-height: 40px;
+    width: 100%;
+}
+
+.search-btn{
+    color: rgb(75, 180, 241);
+    float: right;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+nav{
+    flex: 3;
+}
+
+.nav-links{
+    list-style: none;
+    justify-content: space-around;
+}
+
+.nav-link{
+    color: cornsilk;
+    text-decoration: none;
+}
+
+.status{
+    margin-right: 2%;
+}
+
+.mobile-icon{
+    display: none;
+}
+
+.login-btn{
+    flex: 0.5;
+    background-color: rgb(32, 99, 185);
+    height: 50%;
+    width: 50%;
+    justify-content: space-around;
+    align-items: center;
+    margin-right: 2%;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.submit-btn{
+    color: cornsilk;
+    text-decoration: none;
+}
+
+.heading-center1{
+    height: 75px; 
+    margin-top: 5%;
+
+}
+
+.heading-center2{
+    height: 75px;  
+    margin-top: 5%;
+}
+
+.heading-text{
+    text-align: center;   
+}
+.column{
+    display: flex;
+    background: black;
+}
+
+.columns{
+    display: block;
+}
+
+.cards1,
+.cards2{
+    margin: 0 auto;
+    display: block;
+}
+
+.cards1{
+    background: rgba(39, 39, 39, 0.863);
+    height: 70vh;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    
+}
+
+.cards2{
+    background: black;
+    height: 70vh;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.cards1::-webkit-scrollbar {
+    display: none;
+}
+
+.cards1{
+    -ms-overflow-style: none;
+}
+
+.cards2::-webkit-scrollbar {
+    display: none;
+}
+
+.cards2{
+    -ms-overflow-style: none;
+}
+
+.head-col{
+    display: block;
+}
+
+.column-la{
+    display: flex;
+}
+
+.card{
+    background-color: black;
+    margin: 5%;
+    border-radius: 10px;
+    padding-bottom: 10px;
+}
+
+
+.card img{
+    width: 100%;
+    border-radius: 5px;
+}
+
+.card-title{
+    font-size: 25px;
+    font-weight: 100;
+    margin-top: 5%;
+    margin-left: 2%;
+}
+
+.card-para{
+    font-size: 14px;
+    margin-left: 2%;
+}
+
+.buttons{
+    display: flex;
+}
+
+.gap{
+    flex: 1;
+    margin-left: 5%;
+    margin-top: 5%;
+}
+
+.btn{
+    height: 30px;
+    width: 90%;
+    background: rgba(128, 128, 128, 0.411);
+    color: orange;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+.end-card{
+    display: flex;
+}
+
+.end-gap1{
+    flex: 1.5;
+    margin-left: 5%;
+    margin-top: 6%;
+}
+
+.end-gap2{
+    flex: 1;
+    margin-left: 5%;
+    margin-top: 10%;
+}
+
+.end-btn{
+    height: 40px;
+    width: 80%;
+    border: none;
+    outline: none;
+    background: rgb(34, 100, 243);
+    color: white;
+}
+
+.end-text{
+    font-size: 9px;
+    margin-top: 10%;
+}
+
+.buttons1{
+    display: flex;
+    width: 20%;
+    height: 4%;
+    margin-left: auto;
+    margin-right: auto;
+   
+}
+
+.buttons2{
+    display: flex;
+    width: 20%;
+    height: 4%;
+    margin-left: auto;
+    margin-right: auto; 
+}
+
+.edit{
+    flex: 1;
+    background: gray;
+    border-radius: 40px;
+    padding: 10px;
+}
+
+.delete{
+    flex: 1;
+    margin-left: 10%;
+    background: gray;
+    border-radius: 40px;
+    padding: 10px;
+}
+
+.tick{
+    flex: 1;
+    margin-right: 10%;
+    background: gray;
+    border-radius: 40px;
+    padding: 10px;
+}
+
+.edit-btn,
+.delete-btn,
+.tick-btn{
+    color: white;
+}
+
+.last-part{
+    display: block;
+}
+
+@media screen and (max-width: 1024px){
+    .mobile-icon{
+        display: block;
+        color: #f7f7f7;
+    }
+
+    .nav-link{
+        font-size: 10px;
+    }
+
+    .nav-links{
+        display: none;
+    }
+
+    .column{
+        flex-direction: column;
+    }
+
+}
