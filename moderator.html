@@ -3,9 +3,10 @@
         <title>Moderator</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="/fontawesome/fontawesome-free-5.13.0-web/css/all.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
         <link rel="stylesheet" type="text/css" href="style.css">
     </head>
-    <body>
+    <body id="bd">
         <header>
             <div class="logo-container">
                 <span class="logo-image"><i class="fas fa-map-marker-alt"></i></span>
@@ -75,7 +76,7 @@
             
                                 <div class="buttons1">
                                     <div class="edit">
-                                        <a class="edit-btn" href="#"><i class="far fa-edit"></i></a>
+                                        <a class="edit-btn" href="#" onclick="popupla()"><i class="far fa-edit"></i></a>
                                     </div>
                                     <div class="delete">
                                         <a class="delete-btn" href="#"><i class="fas fa-times"></i></a>
@@ -101,7 +102,7 @@
                                 </div>
                                 <div class="buttons1">
                                     <div class="edit">
-                                        <a class="edit-btn" href="#"><i class="far fa-edit"></i></a>
+                                        <a class="edit-btn" href="#" onclick="popupla()"><i class="far fa-edit"></i></a>
                                     </div>
                                     <div class="delete">
                                         <a class="delete-btn" href="#"><i class="fas fa-times"></i></a>
@@ -130,7 +131,7 @@
             
                                 <div class="buttons1">
                                     <div class="edit">
-                                        <a class="edit-btn" href="#"><i class="far fa-edit"></i></a>
+                                        <a class="edit-btn" href="#" onclick="popupla()"><i class="far fa-edit"></i></a>
                                     </div>
                                     <div class="delete">
                                         <a class="delete-btn" href="#"><i class="fas fa-times"></i></a>
@@ -156,7 +157,7 @@
                                 </div>
                                 <div class="buttons1">
                                     <div class="edit">
-                                        <a class="edit-btn" href="#"><i class="far fa-edit"></i></a>
+                                        <a class="edit-btn" href="#" onclick="popupla()"><i class="far fa-edit"></i></a>
                                     </div>
                                     <div class="delete">
                                         <a class="delete-btn" href="#"><i class="fas fa-times"></i></a>
@@ -202,7 +203,7 @@
                                         <a class="tick-btn" href="#"><i class="fas fa-check"></i></a>
                                     </div>
                                     <div class="edit">
-                                        <a class="edit-btn" href="#"><i class="far fa-edit"></i></a>
+                                        <a class="edit-btn" href="#" onclick="popupla()"><i class="far fa-edit"></i></a>
                                     </div>
                                     <div class="delete">
                                         <a class="delete-btn" href="#"><i class="fas fa-times"></i></a>
@@ -231,7 +232,7 @@
                                         <a class="tick-btn" href="#"><i class="fas fa-check"></i></a>
                                     </div>
                                     <div class="edit">
-                                        <a class="edit-btn" href="#"><i class="far fa-edit"></i></a>
+                                        <a class="edit-btn" href="#" onclick="popupla()"><i class="far fa-edit"></i></a>
                                     </div>
                                     <div class="delete">
                                         <a class="delete-btn" href="#"><i class="fas fa-times"></i></a>
@@ -263,7 +264,7 @@
                                         <a class="tick-btn" href="#"><i class="fas fa-check"></i></a>
                                     </div>
                                     <div class="edit">
-                                        <a class="edit-btn" href="#"><i class="far fa-edit"></i></a>
+                                        <a class="edit-btn" href="#" onclick="popupla()"><i class="far fa-edit"></i></a>
                                     </div>
                                     <div class="delete">
                                         <a class="delete-btn" href="#"><i class="fas fa-times"></i></a>
@@ -292,7 +293,7 @@
                                         <a class="tick-btn" href="#"><i class="fas fa-check"></i></a>
                                     </div>
                                     <div class="edit">
-                                        <a class="edit-btn" href="#"><i class="far fa-edit"></i></a>
+                                        <a class="edit-btn" href="#" onclick="popupla()"><i class="far fa-edit"></i></a>
                                     </div>
                                     <div class="delete">
                                         <a class="delete-btn" href="#"><i class="fas fa-times"></i></a>
@@ -306,6 +307,69 @@
             </div>
             </div>
             
+
+            <div class="main-div animated fadeIn" id="popup" >
+                <div class="modal-content">                  
+                    <div class="main-head-la">
+                        <div class="body1">
+                            <h2>CATEGORY</h2>
+                            <ul class="cat-links">
+                                <li><a href="#" class="cat-btn">NONE</a></li>
+                                <li><a href="#" class="cat-btn">EDUCATION</a></li>
+                                <li><a href="#" class="cat-btn">FOOD</a></li>
+                                <li><a href="#" class="cat-btn">HEALTH</a></li>
+                                <li><a href="#" class="cat-btn">UTILITIES</a></li>
+                                <li><a href="#" class="cat-btn">STREAMING</a></li>
+                                <li><a href="#" class="cat-btn">ENTERTAINMENT</a></li>
+                            </ul>
+                        </div>
+                        <div class="body2">
+                            <h2>LINK</h2>
+                            <div>
+                                <input class="big-input" type="text" placeholder="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore">
+                            </div>
+                            <div>
+                                <h2 class="text1">LOCATIONS</h2>
+                            </div>
+                            <div>
+                                <select>
+                                    <option value="0">Select</option>
+                                </select>
+                                <button class="body2-btn">ALL</button>
+                            </div>    
+                        </div>
+                        <div class="body3">
+                            <h2>DESCRIPTION</h2>
+                            <div>
+                                <input class="big-input" type="text" placeholder="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore">
+                            </div>
+                            <div>
+                                <h2 class="text1">HASHTAGS</h2>
+                            </div>
+                            <div>
+                                <input class="big-input" type="text" placeholder="#streetfood">
+                            </div>    
+                            <div>
+                                <a href="#" class="final-btn">SUBMIT</a>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="close" href="moderator.html">X</a>
+                </div>
+                
+            </div>
+
+
+            <script>
+                var x= document.getElementById('popup');
+                var y= document.getElementById('bd');
+                function popupla(){
+                    x.style.display="flex";
+                    y.style.overflowY="hidden";
+                }
+                x.style.display= "none";
+            </script>
+
 
     </body>
 </html>

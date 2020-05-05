@@ -7,6 +7,7 @@
 body{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     color:white;
+    height: 100%;
 }
 
 header{
@@ -312,7 +313,154 @@ nav{
     display: block;
 }
 
+
+.main-div{
+    color: white;
+    display: block;
+    background: rgba(0, 0, 0, 0.85);
+	width: 100%;
+	height: 100%;
+	position: absolute;
+    top: 0;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+.modal-content{
+    height: 80%;
+	width: 70%;
+	background:rgb(0, 0, 0);
+	text-align: center;
+    border-radius: 4px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    border: 2px solid gray;
+}
+
+.modal-content:hover{
+    border:  2px solid rgb(29, 141, 233);
+}
+
+.main-head-la{
+    display: flex;
+}
+
+.body1{
+    flex: 1.5;
+    margin-top: 2%;
+}
+
+.body2{
+    flex: 2;
+    margin-top: 2%;
+}
+
+.body3{
+    flex: 2;
+    margin-top: 2%;
+
+}
+
+.cat-links{
+    list-style: none;
+    justify-content: space-around;
+    margin: 3%;
+}
+
+.cat-btn{
+    background-color: rgb(0, 0, 0);
+    width: 70%;
+    border: 2px solid gray;
+	border-radius: 5px;
+	text-decoration: none;
+    padding: 10px;
+    color: white;
+    margin-top: 8%;
+    display: inline-block;
+    font-size: 100%;
+}
+
+
+.cat-btn:hover{
+    border:  2px solid rgb(29, 141, 233);
+}
+
+
+.big-input{
+    height: 30%;
+    width: 90%;
+    outline: none;  
+    border: none;
+    border-radius: 5px;
+    background :#212121;
+    margin-top: 5%;
+    color: white;
+}
+
+.text1{
+    margin-top: 5%;
+    font-weight: 100;
+}
+
+.body2 select{
+    height: 10%;
+    width: 70%;
+    background :#212121;
+    color: white;
+    border: none;
+}
+
+.body2-btn{
+    background-color: rgb(0, 0, 0);
+    border: 2px solid gray;
+    border-radius: 5px;
+    padding: 10px 20px;
+    color: white;
+    margin-top: 8%;
+}
+
+.final-btn{
+    background-color:#FF9C39;
+    width: 90%;
+	border-radius: 10px;
+	text-decoration: none;
+	padding: 10px 20px;
+    color: white;
+    display: inline-block;
+    margin-top: 10%;
+}
+
+.close {
+    position: absolute;
+    right: 15.5%;
+    top: 10%;
+	font-size: 35px;
+	color: #333;
+    cursor: pointer;
+    color: white;
+    text-decoration: none;
+}
+
+
+@media screen and (max-width: 1440px){
+    .cat-btn{
+        font-size: 80%;
+        padding-left: 2px;
+        padding-right: 2px;
+        width: 100%
+    }
+
+}
+
+
 @media screen and (max-width: 1024px){
+
+    header{
+        height: 7vh;
+    }
+
     .mobile-icon{
         display: block;
         color: #f7f7f7;
@@ -328,6 +476,79 @@ nav{
 
     .column{
         flex-direction: column;
+    }
+
+    .modal-content{
+        height: 70%;
+    }
+
+    .cat-btn{
+        font-size: 80%;
+        padding-left: 2px;
+        padding-right: 2px;
+        width: 100%
+    }
+
+    .close{
+        top: 15%;
+        font-size: 30px;
+    }
+
+}
+
+@media screen and (max-width: 768px){
+
+    header{
+        height: 6vh;
+    }
+
+    .modal-content{
+        height: 55%;
+    }
+
+  .cat-btn{
+    font-size: 50%;
+  }
+
+  .close{
+    top: 23%;
+    font-size: 20px;
+    right: 16%;
+  }
+
+  .body1 h2,
+  .body2 h2,
+  .body3 h2{
+    font-size: 90%;
+  }
+
+  .big-input{
+      height: 26%;
+      width: 80%;
+  }
+
+}
+
+
+@media screen and (max-width: 425px){
+    header{
+        height: 5vh;
+    }
+
+    .btn{
+        width: 100%;
+        font-size: 12px;
+    }
+
+    .modal-content{
+        height: 60%;
+        width: 90%;
+    }
+    
+    .cat-btn{
+        padding-left: 2px;
+        padding-right: 2px;
+        width: 100%;
     }
 
 }
