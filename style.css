@@ -313,6 +313,40 @@ nav{
     display: block;
 }
 
+.img-button{
+    display: inline-flex;
+}
+
+.tick-past{
+    background: green;
+    width: 35px;
+    height: 35px;
+    border-radius: 40px;
+    padding: 10px;
+    position: relative;
+    margin-left: -6%;
+    margin-top: -3%;
+}
+
+.tick-button{
+    color: white;
+}
+
+
+.cross-button{
+    color: white;
+}
+
+.cross-past{
+    background:red;
+    width: 35px;
+    height: 35px;
+    border-radius: 40px;
+    padding: 10px;
+    position: relative;
+    margin-left: -6%;
+    margin-top: -3%;
+}
 
 .main-div{
     color: white;
